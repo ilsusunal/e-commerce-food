@@ -1,12 +1,22 @@
 export interface MainPageData {
   popularCategories: PopularCategories[];
-  dailyBestSellsFeatured: Product[];
-  dailyBestSellsPopular: Product[];
-  dailyBestSellsNew: Product[];
-  dailyBestSellsCampaing: {
-    campaignName: string;
-    link: string;
+  dailyBestSells: {
+    featured: Product[];
+    popular: Product[];
+    new: Product[];
+    campaingCard: {
+      campaignName: string;
+      link: string;
+    };
   };
+  featuredRecipes: Recipe[];
+  dealsOfTheDay: Product[];
+  testimonial: {
+    title: string;
+    image: string;
+    testimonials: InfoCard[];
+  };
+  services: InfoCard[];
 }
 
 export interface PopularCategories {
@@ -14,7 +24,6 @@ export interface PopularCategories {
   itemAmount: string;
   categoryImage: string;
 }
-
 export interface Product {
   productName: string;
   price: number;
@@ -25,9 +34,13 @@ export interface Product {
   label: string;
   productImages: string;
 }
-
 export interface Recipe {
   recipeName: string;
   recipeText: string;
   recipeImage: string;
+}
+export interface InfoCard {
+  title: string;
+  text: string;
+  icon: string;
 }
