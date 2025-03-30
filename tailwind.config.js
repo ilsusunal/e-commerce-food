@@ -1,6 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  theme: { extend: {} },
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["Poppins", "sans-serif"],
+      },
+      colors: {
+        primary: "#FDBC33",
+        secondary: "#3BB77E",
+        accent: "#F53E32",
+        neutral: "#2B2B2D",
+      },
+    },
+  },
   content: {
     files: [
       "{srcDir}/components/**/*.{vue,js,jsx,mjs,ts,tsx}",

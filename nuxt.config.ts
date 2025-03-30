@@ -10,4 +10,13 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
   ],
   css: ["@/assets/css/tailwind.css"],
+  fonts: {
+    families: [
+      {
+        name: "Poppins",
+        provider: "google",
+        weights: [400, 600, 700],
+      },
+    ],
+  },
 });
