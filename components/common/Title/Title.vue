@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col text-center my-10 gap-8 font-sans">
+  <div class="flex flex-col text-center my-6 gap-8 font-sans">
     <h4 class="text-accent text-xl">{{ props.description }}</h4>
-    <h1 class="text-6xl font-semibold">{{ props.title }}</h1>
+    <h1 :class="`${titleSize} font-semibold`">{{ props.title }}</h1>
   </div>
 </template>
 
@@ -16,7 +16,11 @@ const props = defineProps({
   title: {
     type: String,
     required: true,
-    default: "",
+  },
+  titleSize: {
+    type: String,
+    required: false,
+    default: "text-6xl",
   },
 });
 </script>

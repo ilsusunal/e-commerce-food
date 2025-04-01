@@ -1,14 +1,7 @@
 export interface MainPageData {
   popularCategories: PopularCategories[];
-  dailyBestSells: {
-    featured: Product[];
-    popular: Product[];
-    new: Product[];
-    campaingCard: {
-      campaignName: string;
-      link: string;
-    };
-  };
+  dailyBestSells: DailyBestSells;
+  campaingCards: CampaignCardProps[];
   featuredRecipes: Recipe[];
   dealsOfTheDay: Product[];
   testimonial: {
@@ -19,6 +12,14 @@ export interface MainPageData {
   services: InfoCard[];
 }
 
+export interface CampaignCardProps {
+  image: string;
+  campaignName: string;
+  link: string;
+}
+export interface DailyBestSells {
+  [key: string]: Product[];
+}
 export interface PopularCategories {
   categoryName: string;
   itemAmount: string;

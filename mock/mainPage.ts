@@ -29,7 +29,7 @@ export const mockMainPageData: MainPageData = {
     },
   ],
   dailyBestSells: {
-    featured: [
+    Featured: [
       {
         productName: "All Natural Italian-Style Chicken Meatballs",
         price: 245.8,
@@ -38,7 +38,7 @@ export const mockMainPageData: MainPageData = {
         productBrand: "Hodo Foods",
         score: 4.8,
         label: "Save 35%",
-        productImages: "",
+        productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
       },
       {
         productName: "Angie’s Boomchickapop Sweet and womnies",
@@ -48,7 +48,7 @@ export const mockMainPageData: MainPageData = {
         productBrand: "Hodo Foods",
         score: 4.9,
         label: "Sale",
-        productImages: "",
+        productImages: "/images/mainPage/dailyBestSells/featured_hodo_2.svg",
       },
       {
         productName: "Foster Farms Takeout Crispy Classic",
@@ -58,7 +58,7 @@ export const mockMainPageData: MainPageData = {
         productBrand: "Hodo Foods",
         score: 4.5,
         label: "Best Sale",
-        productImages: "",
+        productImages: "/images/mainPage/dailyBestSells/featured_hodo_3.svg",
       },
       {
         productName: "Blue Diamond Almonds Lightly Salted",
@@ -66,12 +66,12 @@ export const mockMainPageData: MainPageData = {
         discountedPrice: 238.85,
         discountAmunt: 0,
         productBrand: "Hodo Foods",
-        score: 0,
-        label: "",
-        productImages: "",
+        score: 4.8,
+        label: "Save 15%",
+        productImages: "/images/mainPage/dailyBestSells/featured_hodo_4.svg",
       },
     ],
-    popular: [
+    Popular: [
       {
         productName: "Chobani Complete Vanilla Greek Yogurt",
         price: 55.8,
@@ -80,7 +80,7 @@ export const mockMainPageData: MainPageData = {
         productBrand: "NestFood",
         score: 4.6,
         label: "Best Seller",
-        productImages: "",
+        productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
       },
       {
         productName: "Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g",
@@ -90,7 +90,7 @@ export const mockMainPageData: MainPageData = {
         productBrand: "NestFood",
         score: 4.4,
         label: "Best Seller",
-        productImages: "",
+        productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
       },
       {
         productName: "Gorton’s Beer Battered Fish Fillets with soft paper",
@@ -100,7 +100,7 @@ export const mockMainPageData: MainPageData = {
         productBrand: "Old El Paso",
         score: 4.2,
         label: "Best Seller",
-        productImages: "",
+        productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
       },
       {
         productName: "Haagen-Dazs Caramel Cone Ice Cream Ketchup",
@@ -110,10 +110,10 @@ export const mockMainPageData: MainPageData = {
         productBrand: "Tyson",
         score: 4.3,
         label: "Best Seller",
-        productImages: "",
+        productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
       },
     ],
-    new: [
+    New: [
       {
         productName: "Seeds of Change Organic Quinoa, Brown, & Red Rice",
         price: 33.8,
@@ -122,7 +122,7 @@ export const mockMainPageData: MainPageData = {
         productBrand: "NestFood",
         score: 4.0,
         label: "New",
-        productImages: "",
+        productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
       },
       {
         productName: "Perdue Simply Smart Organics Gluten Free",
@@ -132,7 +132,7 @@ export const mockMainPageData: MainPageData = {
         productBrand: "Old El Paso",
         score: 4.2,
         label: "New",
-        productImages: "",
+        productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
       },
       {
         productName: "Signature Wood-Fired Mushroom and Caramelized",
@@ -142,7 +142,7 @@ export const mockMainPageData: MainPageData = {
         productBrand: "Progresso",
         score: 3.5,
         label: "New",
-        productImages: "",
+        productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
       },
       {
         productName: "Simply Lemonade with Raspberry Juice",
@@ -152,14 +152,17 @@ export const mockMainPageData: MainPageData = {
         productBrand: "Yoplait",
         score: 4.0,
         label: "New",
-        productImages: "",
+        productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
       },
     ],
-    campaingCard: {
+  },
+  campaingCards: [
+    {
+      image: "/images/mainPage/dailyBestSells/campaignCard_1.svg",
       campaignName: "Bring nature into your home",
       link: "/",
     },
-  },
+  ],
   featuredRecipes: [
     {
       recipeName: "Fattoush salad",

@@ -1,5 +1,5 @@
 <template>
-  <div class="my-20">
+  <div class="my-20 w-fit mx-auto">
     <Title description="CUSTOMER FAVORITES" title="Popular Categories" />
     <div class="flex flex-wrap items-center justify-center gap-4 md:gap-12">
       <CategoryCard
