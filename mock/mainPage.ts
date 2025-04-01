@@ -166,18 +166,18 @@ export const mockMainPageData: MainPageData = {
   featuredRecipes: [
     {
       recipeName: "Fattoush salad",
-      recipeText: "",
-      recipeImage: "",
+      recipeText: "Description of the item",
+      recipeImage: "/images/mainPage/featuredRecipes/rec_fattoush_salad.svg",
     },
     {
       recipeName: "Vegetable salad",
-      recipeText: "",
-      recipeImage: "",
+      recipeText: "Description of the item",
+      recipeImage: "/images/mainPage/featuredRecipes/rec_veg_salad.svg",
     },
     {
       recipeName: "Egg vegi salad",
-      recipeText: "",
-      recipeImage: "",
+      recipeText: "Description of the item",
+      recipeImage: "/images/mainPage/featuredRecipes/rec_egg_vegi_salad.svg",
     },
   ],
   dealsOfTheDay: [

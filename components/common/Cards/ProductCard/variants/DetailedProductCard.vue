@@ -25,19 +25,23 @@
         }}
       </p>
     </div>
-    <div class="flex items-center gap-4 font-semibold">
+    <div class="flex items-center gap-4 font-semibold mt-auto">
       <p class="text-sm text-secondary">$ {{ discountedPrice }}</p>
       <p class="text-neutralLighter text-xs line-through">$ {{ price }}</p>
     </div>
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-2 mt-auto">
       <div class="w-full bg-neutralLighter/50 rounded h-1 overflow-hidden">
         <div class="bg-accent h-1" :style="{ width: '50%' }"></div>
       </div>
       <p class="text-xs">Sold: 90/120</p>
     </div>
-    <button class="text-sm bg-accent text-white rounded py-3 hover:bg-primary">
-      Add To Cart
-    </button>
+    <div class="mt-auto">
+      <button
+        class="w-full text-sm bg-accent text-white rounded py-3 hover:bg-primary"
+      >
+        Add To Cart
+      </button>
+    </div>
   </div>
 </template>
 

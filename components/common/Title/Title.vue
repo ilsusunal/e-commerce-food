@@ -1,5 +1,7 @@
 <template>
-  <div class="flex flex-col text-center my-6 gap-8 font-sans">
+  <div
+    :class="`flex flex-col text-${textLocation} my-6 gap-8 font-sans text-wrap`"
+  >
     <h4 class="text-accent text-xl">{{ props.description }}</h4>
     <h1 :class="`${titleSize} font-semibold`">{{ props.title }}</h1>
   </div>
@@ -21,6 +23,11 @@ const props = defineProps({
     type: String,
     required: false,
     default: "text-6xl",
+  },
+  textLocation: {
+    type: String,
+    required: false,
+    default: "center",
   },
 });
 </script>

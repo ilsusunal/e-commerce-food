@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative w-[320px] h-[460px] p-10 font-sans shadow-xl rounded-xl overflow-hidden group"
+    class="relative w-[320px] h-[460px] p-8 font-sans shadow-xl rounded-xl overflow-hidden group"
   >
     <NuxtImg
       :src="image"
@@ -26,6 +26,7 @@
 </template>
 
 <script setup lang="ts">
+// Another way to use props, not from the official docs
 const { campaignName, link, image } = defineProps<{
   image: string;
   campaignName: string;
