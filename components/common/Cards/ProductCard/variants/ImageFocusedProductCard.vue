@@ -1,8 +1,40 @@
 <template>
-  <div
-    class="flex flex-col items-center p-4 w-60 my-2 md:my-10 gap-4 font-sans border-2 rounded-xl hover:scale-110 transition-transform duration-300 ease-in-out"
-  >
-    IMG FOCUSED
+  <div class="relative w-72">
+    <NuxtImg
+      :src="productImages"
+      :alt="productName"
+      class="w-72 h-72 object-cover mt-4 z-0 rounded-xl"
+    />
+
+    <div
+      class="absolute left-1/2 -translate-x-1/2 -bottom-12 w-[240px] h-[180px] p-4 font-sans shadow-xl rounded-xl bg-white z-10"
+    >
+      <div class="flex flex-col gap-1 h-full">
+        <div class="flex flex-col gap-2">
+          <h1 class="text-sm text-wrap font-semibold">{{ productName }}</h1>
+          <p class="flex items-center text-sm">
+            <Icon name="material-symbols:star" class="mr-2 text-primary" />{{
+              score
+            }}
+          </p>
+          <h4 class="text-xs text-neutralLight">by {{ productBrand }}</h4>
+        </div>
+
+        <div class="flex justify-between mt-auto">
+          <div class="flex items-center gap-4 font-semibold">
+            <p class="text-sm text-secondary">$ {{ discountedPrice }}</p>
+            <p class="text-neutralLighter text-xs line-through">
+              $ {{ price }}
+            </p>
+          </div>
+          <button
+            class="w-20 text-sm bg-accent text-white rounded py-1 hover:bg-primary"
+          >
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

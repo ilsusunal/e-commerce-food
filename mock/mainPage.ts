@@ -189,7 +189,7 @@ export const mockMainPageData: MainPageData = {
       productBrand: "NestFood",
       score: 4.0,
       label: "",
-      productImages: "",
+      productImages: "/images/mainPage/dealsOfTheDay/deal_of_day_1.svg",
     },
     {
       productName: "Perdue Simply Smart Organics Gluten Free",
@@ -199,7 +199,7 @@ export const mockMainPageData: MainPageData = {
       productBrand: "Old El Paso",
       score: 4.2,
       label: "",
-      productImages: "",
+      productImages: "/images/mainPage/dealsOfTheDay/deal_of_day_2.svg",
     },
     {
       productName: "Signature Wood-Fired Mushroom and Caramelized",
@@ -209,7 +209,7 @@ export const mockMainPageData: MainPageData = {
       productBrand: "Progresso",
       score: 3.5,
       label: "",
-      productImages: "",
+      productImages: "/images/mainPage/dealsOfTheDay/deal_of_day_3.svg",
     },
     {
       productName: "Simply Lemonade with Raspberry Juice",
@@ -219,7 +219,7 @@ export const mockMainPageData: MainPageData = {
       productBrand: "Yoplait",
       score: 4.0,
       label: "",
-      productImages: "",
+      productImages: "/images/mainPage/dealsOfTheDay/deal_of_day_4.svg",
     },
   ],
   testimonial: {
