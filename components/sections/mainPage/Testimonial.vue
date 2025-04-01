@@ -1,8 +1,12 @@
 <template>
-  <div class="my-10">
-    <div class="justify-center md:flex md:justify-between gap-4 mb-6">
+  <div class="md:my-20">
+    <div class="md:flex justify-center gap-12 mb-6">
+      <NuxtImg
+        :src="testimonial.image"
+        :alt="testimonial.title"
+        class="w-[540px] h-auto object-cover mt-4 rounded-xl"
+      />
       <Title :title="testimonial.title" titleSize="text-3xl" />
-      <!-- <Tabs v-model="selectedTab" :tabs="tabs" /> -->
     </div>
     <div class="flex flex-wrap items-center justify-center gap-4"></div>
   </div>

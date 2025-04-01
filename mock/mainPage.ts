@@ -224,7 +224,7 @@ export const mockMainPageData: MainPageData = {
   ],
   testimonial: {
     title: "Why People Choose us?",
-    image: "",
+    image: "/images/mainPage/testimonial.png",
     testimonials: [
       {
         title: "Convenient and Reliable",

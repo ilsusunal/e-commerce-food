@@ -1,11 +1,11 @@
 <template>
   <div
-    class="relative flex flex-col px-4 py-1 w-[220px] h-[460px] gap-3 font-sans border-2 rounded-xl"
+    class="relative flex flex-col p-4 w-[220px] h-[480px] gap-3 font-sans border-2 rounded-xl"
   >
     <div
       v-if="label"
       :class="[
-        'absolute top-0 left-0 text-white text-xs px-4 py-2 rounded-none rounded-br-xl rounded-tl-xl ',
+        'absolute top-0 left-0 text-white text-xs px-4 py-2 rounded-none rounded-br-xl rounded-tl-xl',
         labelClass,
       ]"
     >
