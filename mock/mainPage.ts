@@ -4,28 +4,28 @@ export const mockMainPageData: MainPageData = {
   popularCategories: [
     {
       categoryName: "Main Dish",
-      itemAmount: "86",
-      categoryImage: "",
+      itemAmount: "(86 items)",
+      categoryImage: "/images/mainPage/popularCategories/popCat_main_dish.svg",
     },
     {
       categoryName: "Breakfast",
-      itemAmount: "12",
-      categoryImage: "",
+      itemAmount: "(12 items)",
+      categoryImage: "/images/mainPage/popularCategories/popCat_breakfast.svg",
     },
     {
       categoryName: "Dessert",
-      itemAmount: "48",
-      categoryImage: "",
+      itemAmount: "(48 items)",
+      categoryImage: "/images/mainPage/popularCategories/popCat_dessert.svg",
     },
     {
       categoryName: "Beverage",
-      itemAmount: "25",
-      categoryImage: "",
+      itemAmount: "(25 items)",
+      categoryImage: "/images/mainPage/popularCategories/popCat_beverage.svg",
     },
     {
       categoryName: "Browse All",
-      itemAmount: "255",
-      categoryImage: "",
+      itemAmount: "(255 items)",
+      categoryImage: "/images/mainPage/popularCategories/popCat_browse_all.svg",
     },
   ],
   dailyBestSells: {

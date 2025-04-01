@@ -8,7 +8,7 @@
       class="flex-1 h-full px-4 bg-transparent text-sm outline-none"
     />
     <select
-      class="h-full px-2 text-sm hover:text-primary border-l border-secondary outline-none cursor-pointer"
+      class="h-full px-4 mx-2 text-sm border-l border-secondary outline-none cursor-pointer"
     >
       <option value="">All Categories</option>
       <option>Pizza</option>

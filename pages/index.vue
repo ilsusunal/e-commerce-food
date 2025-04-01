@@ -1,6 +1,12 @@
 <template>
-  <section class="p-6">
-    <h2 class="text-2xl font-semibold text-gray-700">Ana Sayfa</h2>
-    <p class="mt-2 text-gray-500">Hoş geldin! Burası e-ticaret ana sayfan.</p>
-  </section>
+  <Banner />
+  <PopularCategories :categories="popularCategories" />
 </template>
+
+<script setup lang="ts">
+import Banner from "../components/layout/Banner.vue";
+import PopularCategories from "../components/sections/mainPage/PopularCategories.vue";
+
+import { mockMainPageData } from "~/mock/mainPage";
+const popularCategories = mockMainPageData.popularCategories;
+</script>

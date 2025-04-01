@@ -1,0 +1,22 @@
+<template>
+  <div class="flex flex-col text-center my-10 gap-8 font-sans">
+    <h4 class="text-accent text-xl">{{ props.description }}</h4>
+    <h1 class="text-6xl font-semibold">{{ props.title }}</h1>
+  </div>
+</template>
+
+<script setup>
+// Defining props, official doc way
+const props = defineProps({
+  description: {
+    type: String,
+    required: false,
+    default: "",
+  },
+  title: {
+    type: String,
+    required: true,
+    default: "",
+  },
+});
+</script>
