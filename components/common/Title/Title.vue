@@ -22,7 +22,7 @@ const props = defineProps({
   titleSize: {
     type: String,
     required: false,
-    default: "text-6xl",
+    default: "text-5xl",
   },
   textLocation: {
     type: String,

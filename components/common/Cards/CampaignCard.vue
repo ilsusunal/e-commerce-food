@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative w-[320px] h-[460px] p-8 font-sans shadow-xl rounded-xl overflow-hidden group"
+    class="relative p-8 font-sans shadow-xl rounded-xl overflow-hidden group"
   >
     <NuxtImg
       :src="image"

@@ -1,16 +1,15 @@
 <template>
-  <Banner />
-  <div class="mx-auto max-w-7xl">
-    <PopularCategories :categories="popularCategories" />
-    <DailyBestSells
-      :dailyBestSells="dailyBestSells"
-      :campaignCard="campaignCard"
-    />
-    <FeaturedRecipes :featuredRecipes="featuredRecipes" />
-    <DealsOfTheDay :dealsOfTheDay="dealsOfTheDay" />
-    <Testimonial :testimonial="testimonial" />
-    <MailSubscriptionAndServices :services="services" />
-  </div>
+  <main>
+    <Banner />
+    <div class="mx-auto md:max-w-6xl">
+      <PopularCategories :categories="popularCategories" />
+      <DailyBestSells :daily-best-sells="dailyBestSells" :campaign-card="campaignCard" />
+      <FeaturedRecipes :featured-recipes="featuredRecipes" />
+      <DealsOfTheDay :deals-of-the-day="dealsOfTheDay" />
+      <Testimonial :testimonial="testimonial" />
+      <MailSubscriptionAndServices :services="services" />
+    </div>
+  </main>
 </template>
 
 <script setup lang="ts">

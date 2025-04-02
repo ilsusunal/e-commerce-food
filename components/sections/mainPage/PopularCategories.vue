@@ -1,7 +1,7 @@
 <template>
   <div class="my-20 w-fit mx-auto">
     <Title description="CUSTOMER FAVORITES" title="Popular Categories" />
-    <div class="flex flex-wrap items-center justify-center gap-4 md:gap-12">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-full">
       <CategoryCard
         v-for="(category, index) in categories"
         :key="index"
@@ -23,6 +23,7 @@ interface CategoryItem {
   categoryImage: string;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const props = defineProps<{
   categories: CategoryItem[];
 }>();

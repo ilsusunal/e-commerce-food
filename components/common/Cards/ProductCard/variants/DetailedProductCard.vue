@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex flex-col p-4 w-[220px] h-[480px] gap-3 font-sans border-2 rounded-xl"
+    class="relative flex flex-col p-4 w-full h-[460px] gap-3 font-sans border-2 rounded-xl"
   >
     <div
       v-if="label"
@@ -31,7 +31,7 @@
     </div>
     <div class="flex flex-col gap-2 mt-auto">
       <div class="w-full bg-neutralLighter/50 rounded h-1 overflow-hidden">
-        <div class="bg-accent h-1" :style="{ width: '50%' }"></div>
+        <div class="bg-accent h-1" :style="{ width: '50%' }"/>
       </div>
       <p class="text-xs">Sold: 90/120</p>
     </div>
@@ -52,7 +52,6 @@ const {
   productName,
   price,
   discountedPrice,
-  discountAmunt,
   productBrand,
   score,
   label,

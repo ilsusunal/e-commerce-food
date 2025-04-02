@@ -1,28 +1,20 @@
 <template>
   <div class="my-10">
     <div class="justify-center md:flex md:justify-between gap-4 mb-6">
-      <Title title="Daily Best Sells" titleSize="text-3xl" />
+      <Title title="Daily Best Sells" title-size="text-3xl" />
       <Tabs v-model="selectedTab" :tabs="tabs" />
     </div>
-    <div class="flex flex-wrap items-center justify-center gap-4">
-      <CampaignCard
-        :image="campaignCard.image"
-        :campaignName="campaignCard.campaignName"
-        :link="campaignCard.link"
-      />
-      <ProductCard
-        v-for="(product, index) in currentProducts"
-        :key="selectedTab + '-' + index"
-        :productName="product.productName"
-        :price="product.price"
-        :discountedPrice="product.discountedPrice"
-        :discountAmunt="product.discountAmunt"
-        :productBrand="product.productBrand"
-        :score="product.score"
-        :label="product.label"
-        :productImages="product.productImages"
-        variant="detailed"
-      />
+    <div class="flex gap-4 ">
+      <CampaignCard 
+        :image="campaignCard.image" :campaign-name="campaignCard.campaignName" :link="campaignCard.link"
+        class="w-[400px] h-[480px]" />
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-full">
+        <ProductCard 
+          v-for="(product, index) in currentProducts" :key="selectedTab + '-' + index"
+          :product-name="product.productName" :price="product.price" :discounted-price="product.discountedPrice"
+          :discount-amunt="product.discountAmunt" :product-brand="product.productBrand" :score="product.score"
+          :label="product.label" :product-images="product.productImages" variant="detailed" class="h-[480px]" />
+      </div>
     </div>
   </div>
 </template>

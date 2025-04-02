@@ -17,8 +17,8 @@
     <ButtonWithIcon
       v-if="label"
       icon="material-symbols:favorite-outline"
-      selectedIcon="material-symbols:favorite"
-      buttonClass="absolute top-0 right-0 bg-accent text-white text-lg px-4 py-2 rounded-none rounded-bl-xl rounded-tr-xl"
+      selected-icon="material-symbols:favorite"
+      button-class="absolute top-0 right-0 bg-accent text-white text-lg px-4 py-2 rounded-none rounded-bl-xl rounded-tr-xl"
     />
   </div>
 </template>
@@ -58,7 +58,7 @@ const cardSizeClass = computed(() => {
     case "large":
       return "w-[360px] h-[360px]";
     default:
-      return "w-[200px]";
+      return "w-max-[200px]";
   }
 });
 
@@ -72,6 +72,4 @@ const imageSizeClass = computed(() => {
       return "w-20";
   }
 });
-
-const isLiked = ref(false);
 </script>
