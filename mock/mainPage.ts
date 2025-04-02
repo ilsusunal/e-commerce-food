@@ -247,27 +247,27 @@ export const mockMainPageData: MainPageData = {
     {
       title: "Best prices & offers",
       text: "Orders $50 or more",
-      icon: "",
+      icon: "/images/mainPage/services/service_1.svg",
     },
     {
       title: "Free delivery",
       text: "24/7 amazing services",
-      icon: "",
+      icon: "/images/mainPage/services/service_2.svg",
     },
     {
       title: "Great daily deal",
       text: "When you sign up",
-      icon: "",
+      icon: "/images/mainPage/services/service_3.svg",
     },
     {
       title: "Wide assortment",
       text: "Mega Discounts",
-      icon: "",
+      icon: "/images/mainPage/services/service_4.svg",
     },
     {
       title: "Easy returns",
       text: "Within 30 days",
-      icon: "",
+      icon: "/images/mainPage/services/service_5.svg",
     },
   ],
   footer: {
