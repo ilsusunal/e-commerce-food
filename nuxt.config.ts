@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "@nuxt/icon",
     "@nuxtjs/tailwindcss",
+    "nuxt-swiper",
   ],
   css: ["@/assets/css/tailwind.css"],
   fonts: {
