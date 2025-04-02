@@ -10,6 +10,24 @@ export interface MainPageData {
     testimonials: InfoCard[];
   };
   services: InfoCard[];
+  footer: {
+    about: {
+      logo: string;
+      description: string;
+      communication: {
+        icon: string;
+        text: string;
+      }[];
+    };
+    columns: {
+      Company: { text: string; link: string }[];
+      Category: { text: string; link: string }[];
+    };
+    socials: {
+      socialMedia: { link: string; icon: string }[];
+      images: string[];
+    };
+  };
 }
 
 export interface CampaignCardProps {

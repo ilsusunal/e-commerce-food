@@ -270,4 +270,58 @@ export const mockMainPageData: MainPageData = {
       icon: "",
     },
   ],
+  footer: {
+    about: {
+      logo: "/images/mainPage/foodzy_logo.svg",
+      description:
+        "FoodTrove is the biggest market of grocery products. Get your daily needs from our store.",
+      communication: [
+        {
+          icon: "material-symbols:location-on-outline-rounded",
+          text: "51 Green St.Huntington ohaio beach ontario, NY 11746 KY 4783, USA.",
+        },
+        {
+          icon: "material-symbols:mail-outline-rounded",
+          text: "example@email.com",
+        },
+        {
+          icon: "material-symbols:call",
+          text: "+91 123 4567890",
+        },
+      ],
+    },
+    columns: {
+      Company: [
+        { text: "About Us", link: "/" },
+        { text: "Delivery Information", link: "/" },
+        { text: "Privacy Policy", link: "/" },
+        { text: "Terms & Conditions", link: "/" },
+        { text: "Contact Us", link: "/" },
+        { text: "Support Center", link: "/" },
+      ],
+      Category: [
+        { text: "Dairy & Bakery", link: "/" },
+        { text: "Fruits & Vegetable", link: "/" },
+        { text: "Snack & Spice", link: "/" },
+        { text: "Juice & Drinks", link: "/" },
+        { text: "Chicken & Meat", link: "/" },
+        { text: "Fast Food", link: "/" },
+      ],
+    },
+    socials: {
+      socialMedia: [
+        { link: "/", icon: "ri:facebook-line" },
+        { link: "/", icon: "hugeicons:new-twitter" },
+        { link: "/", icon: "icon-park-outline:dribble" },
+        { link: "/", icon: "mdi:instagram" },
+      ],
+      images: [
+        "/images/mainPage/footer/footer_1.png",
+        "/images/mainPage/footer/footer_2.png",
+        "/images/mainPage/footer/footer_3.png",
+        "/images/mainPage/footer/footer_4.png",
+        "/images/mainPage/footer/footer_5.png",
+      ],
+    },
+  },
 };
