@@ -1,21 +1,30 @@
 <template>
-  <div class="md:my-20">
+  <div class="md:my-20" >
     <div class="md:flex justify-center gap-12 mb-6">
-      <NuxtImg
-        :src="testimonial.image"
+      <NuxtImg 
+        :src="testimonial.image" 
         :alt="testimonial.title"
-        class="w-[540px] h-auto object-cover mt-4 rounded-xl"
-      />
-      <Title :title="testimonial.title" titleSize="text-3xl" />
+        class="w-[540px] h-auto object-cover mt-4 rounded-xl" />
+      <Title 
+        :title="testimonial.title" title-size="text-3xl" />
     </div>
-    <div class="flex flex-wrap items-center justify-center gap-4"></div>
+    <div class="flex flex-wrap items-center justify-center gap-4">
+      <CardWithIcon 
+      v-for="(item, index) in testimonial.testimonials" 
+      :key="index" 
+      :description="item.text"
+      :image="item.icon"
+      :title="item.title"/>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import Title from "~/components/common/Title/Title.vue";
 import type { InfoCard } from "~/types/mainPage";
+import Title from "~/components/common/Title/Title.vue";
+import CardWithIcon from "~/components/common/Cards/CardWithIcon.vue";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const props = defineProps<{
   testimonial: {
     title: string;
