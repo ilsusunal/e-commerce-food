@@ -9,15 +9,15 @@
     />
 
     <div
-      class="relative z-10 flex flex-col justify-start h-full text-white text-center p-6"
+      class="relative z-10 flex flex-col justify-start h-full text-white text-center p-4"
     >
-      <h4 class="text-3xl text-wrap font-semibold mb-4 text-start">
+      <h4 class="text-3xl text-wrap font-semibold mb-16 text-start">
         {{ campaignName }}
       </h4>
 
       <NuxtLink
         :to="link"
-        class="bg-accent text-white text-sm mt-20 w-32 px-3 py-2 rounded hover:bg-primary transition"
+        class="bg-accent text-white text-sm w-32 px-3 py-2 rounded hover:bg-primary transition"
       >
         Shop Now
       </NuxtLink>

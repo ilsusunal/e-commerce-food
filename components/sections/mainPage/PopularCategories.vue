@@ -1,7 +1,9 @@
 <template>
-  <div class="my-20 w-fit mx-auto">
+  <div class="w-fit mx-auto">
     <Title description="CUSTOMER FAVORITES" title="Popular Categories" />
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-full">
+    <div
+      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-full"
+    >
       <CategoryCard
         v-for="(category, index) in categories"
         :key="index"

@@ -1,9 +1,12 @@
 <template>
-  <main>
+  <main class="flex flex-col gap-20">
     <Banner />
-    <div class="mx-auto md:max-w-6xl">
+    <div class="mx-auto md:max-w-6xl flex flex-col gap-20">
       <PopularCategories :categories="popularCategories" />
-      <DailyBestSells :daily-best-sells="dailyBestSells" :campaign-card="campaignCard" />
+      <DailyBestSells
+        :daily-best-sells="dailyBestSells"
+        :campaign-card="campaignCard"
+      />
       <FeaturedRecipes :featured-recipes="featuredRecipes" />
       <DealsOfTheDay :deals-of-the-day="dealsOfTheDay" />
       <Testimonial :testimonial="testimonial" />

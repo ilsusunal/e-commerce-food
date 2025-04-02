@@ -1,5 +1,5 @@
 <template>
-  <div class="my-20 w-full mx-auto">
+  <div class="w-full mx-auto">
     <div class="flex justify-between items-center">
       <div class="max-w-[500px] items-start">
         <Title

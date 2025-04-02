@@ -1,10 +1,12 @@
 <template>
-  <div class="my-10 w-fit mx-auto">
+  <div class="w-fit mx-auto">
     <div class="justify-center md:flex md:justify-between gap-4 mb-6">
       <Title title="Deals Of The Day" title-size="text-3xl" />
       <!-- <Tabs v-model="selectedTab" :tabs="tabs" /> -->
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-full">
+    <div
+      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-full"
+    >
       <ProductCard
         v-for="(product, index) in dealsOfTheDay"
         :key="index"

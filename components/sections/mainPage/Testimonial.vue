@@ -1,5 +1,5 @@
 <template>
-  <div class="md:my-20 items-center">
+  <div class="items-center">
     <div class="md:flex justify-center items-center gap-16 mb-6">
       <div class="p-4 w-full">
         <NuxtImg
