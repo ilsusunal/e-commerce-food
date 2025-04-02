@@ -1,21 +1,21 @@
 <template>
-  <div class="md:my-20" >
+  <div class="md:my-20">
     <div class="md:flex justify-center gap-12 mb-6">
       <NuxtImg 
         :src="testimonial.image" 
         :alt="testimonial.title"
         class="w-[540px] h-auto object-cover mt-4 rounded-xl" />
-      <Title 
-        :title="testimonial.title" title-size="text-3xl" />
+      <div class="flex flex-col items-start gap-4">
+        <Title :title="testimonial.title" title-size="text-4xl" />
+        <CardWithIcon 
+          v-for="(item, index) in testimonial.testimonials" 
+          :key="index" 
+          :description="item.text"
+          :image="item.icon" 
+          :title="item.title" />
+      </div>
     </div>
-    <div class="flex flex-wrap items-center justify-center gap-4">
-      <CardWithIcon 
-      v-for="(item, index) in testimonial.testimonials" 
-      :key="index" 
-      :description="item.text"
-      :image="item.icon"
-      :title="item.title"/>
-    </div>
+
   </div>
 </template>
 

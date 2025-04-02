@@ -1,5 +1,5 @@
 <template>
-    <div class="flex w-full items-center gap-8 relative p-8 font-sans shadow-xl rounded-xl">
+    <div class="flex w-full items-center gap-8 relative p-4 font-sans shadow-xl rounded-xl">
         <NuxtImg 
         :src="props.image" 
         :alt="props.title" 
