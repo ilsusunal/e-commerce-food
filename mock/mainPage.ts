@@ -229,17 +229,17 @@ export const mockMainPageData: MainPageData = {
       {
         title: "Convenient and Reliable",
         text: "Whether you dine in, take out, or order delivery, our service is convenient, fast, and reliable, making mealtime hassle-free.",
-        icon: "",
+        icon: "/images/mainPage/testimonials/testimonial_1.svg",
       },
       {
         title: "Variety of Options",
         text: "From hearty meals to light snacks, we offer a wide range of options to suit every taste and craving.",
-        icon: "",
+        icon: "/images/mainPage/testimonials/testimonial_2.svg",
       },
       {
         title: "Eat Burger",
         text: "Our burgers are grilled to perfection, with juicy patties and flavorful toppings that make every bite a delicious experience.",
-        icon: "",
+        icon: "/images/mainPage/testimonials/testimonial_3.svg",
       },
     ],
   },
