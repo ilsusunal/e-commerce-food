@@ -16,7 +16,8 @@
     </button>
 
     <Swiper
-      class="w-full relative block z-0"
+      ref="swiperRef"
+      :modules="[Navigation]"
       :slides-per-view="2"
       :space-between="16"
       :breakpoints="{
@@ -24,8 +25,12 @@
         768: { slidesPerView: 3 },
         1024: { slidesPerView: 4 },
       }"
-      :navigation="{ nextEl: nextEl, prevEl: prevEl }"
-      @swiper="(swiper) => (swiperRef = swiper)"
+      :navigation="{
+        prevEl: prevEl,
+        nextEl: nextEl,
+      }"
+      :init="false"
+      class="w-full relative block z-0"
     >
       <SwiperSlide
         v-for="(item, index) in items"
@@ -41,14 +46,15 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const props = defineProps<{
+const { items } = defineProps<{
   items: any[];
 }>();
 
 const swiperRef = ref();
-const prevEl = ref();
-const nextEl = ref();
+const prevEl = ref<HTMLElement | null>(null);
+const nextEl = ref<HTMLElement | null>(null);
 </script>
