@@ -1,6 +1,6 @@
 <template>
   <main class="flex flex-col gap-20">
-    <Banner />
+    <Hero />
     <div class="mx-auto md:max-w-6xl flex flex-col gap-20">
       <PopularCategories :categories="popularCategories" />
       <DailyBestSells
@@ -17,13 +17,13 @@
 
 <script setup lang="ts">
 import { mockMainPageData } from "~/mock/mainPage";
-import Banner from "../components/layout/Banner.vue";
-import PopularCategories from "../components/sections/mainPage/PopularCategories.vue";
-import DailyBestSells from "../components/sections/mainPage/DailyBestSells.vue";
-import FeaturedRecipes from "~/components/sections/mainPage/FeaturedRecipes.vue";
-import DealsOfTheDay from "~/components/sections/mainPage/DealsOfTheDay.vue";
-import Testimonial from "~/components/sections/mainPage/Testimonial.vue";
-import MailSubscriptionAndServices from "~/components/sections/mainPage/MailSubscriptionAndServices.vue";
+import Hero from "../components/sections/main/Hero.vue";
+import PopularCategories from "../components/sections/main/PopularCategories.vue";
+import DailyBestSells from "../components/sections/main/DailyBestSells.vue";
+import FeaturedRecipes from "~/components/sections/main/FeaturedRecipes.vue";
+import DealsOfTheDay from "~/components/sections/main/DealsOfTheDay.vue";
+import Testimonial from "~/components/sections/main/Testimonial.vue";
+import MailSubscriptionAndServices from "~/components/sections/main/MailSubscriptionAndServices.vue";
 
 const popularCategories = mockMainPageData.popularCategories;
 const dailyBestSells = mockMainPageData.dailyBestSells;

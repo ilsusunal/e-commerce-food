@@ -1,5 +1,5 @@
 export interface MainPageData {
-  popularCategories: PopularCategories[];
+  popularCategories: CategoryItem[];
   dailyBestSells: DailyBestSells;
   campaingCards: CampaignCardProps[];
   featuredRecipes: Recipe[];
@@ -38,7 +38,8 @@ export interface CampaignCardProps {
 export interface DailyBestSells {
   [key: string]: Product[];
 }
-export interface PopularCategories {
+export interface CategoryItem {
+  id: number;
   categoryName: string;
   itemAmount: string;
   categoryImage: string;

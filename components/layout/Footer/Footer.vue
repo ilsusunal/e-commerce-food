@@ -41,12 +41,12 @@
           placeholder="Your email address"
           required
           class="mb-4 p-2 bg-white border border-neutralLighter rounded w-full text-neutral"
-        />
+        >
         <div class="flex gap-3 mb-4">
           <NuxtLink
             v-for="(social, i) in props.footer.socials.socialMedia"
-            :to="social.link"
             :key="i"
+            :to="social.link"
             class="hover:text-accent"
           >
             <div

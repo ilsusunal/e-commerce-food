@@ -3,26 +3,31 @@ import type { MainPageData } from "~/types/mainPage";
 export const mockMainPageData: MainPageData = {
   popularCategories: [
     {
+      id: 1,
       categoryName: "Main Dish",
       itemAmount: "(86 items)",
       categoryImage: "/images/mainPage/popularCategories/popCat_main_dish.svg",
     },
     {
+      id: 2,
       categoryName: "Breakfast",
       itemAmount: "(12 items)",
       categoryImage: "/images/mainPage/popularCategories/popCat_breakfast.svg",
     },
     {
+      id: 3,
       categoryName: "Dessert",
       itemAmount: "(48 items)",
       categoryImage: "/images/mainPage/popularCategories/popCat_dessert.svg",
     },
     {
+      id: 4,
       categoryName: "Beverage",
       itemAmount: "(25 items)",
       categoryImage: "/images/mainPage/popularCategories/popCat_beverage.svg",
     },
     {
+      id: 5,
       categoryName: "Browse All",
       itemAmount: "(255 items)",
       categoryImage: "/images/mainPage/popularCategories/popCat_browse_all.svg",
