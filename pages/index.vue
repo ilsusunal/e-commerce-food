@@ -1,17 +1,15 @@
 <template>
   <main class="flex flex-col gap-20">
     <Hero />
-    <div class="mx-auto md:max-w-6xl flex flex-col gap-20">
-      <PopularCategories :categories="popularCategories" />
-      <DailyBestSells
-        :daily-best-sells="dailyBestSells"
-        :campaign-card="campaignCard"
-      />
-      <FeaturedRecipes :featured-recipes="featuredRecipes" />
-      <DealsOfTheDay :deals-of-the-day="dealsOfTheDay" />
-      <Testimonial :testimonial="testimonial" />
-      <MailSubscriptionAndServices :services="services" />
-    </div>
+    <PopularCategories :categories="popularCategories" />
+    <DailyBestSells
+      :daily-best-sells="dailyBestSells"
+      :campaign-card="campaignCard"
+    />
+    <FeaturedRecipes :featured-recipes="featuredRecipes" />
+    <DealsOfTheDay :deals-of-the-day="dealsOfTheDay" />
+    <Testimonial :testimonial="testimonial" />
+    <MailSubscriptionAndServices :services="services" />
   </main>
 </template>
 

@@ -1,32 +1,37 @@
 <template>
-  <div class="w-full relative">
+  <div class="relative w-full z-0 min-h-[480px]">
     <button
+      type="button"
       ref="prevEl"
-      class="absolute left-0 top-1/2 -translate-y-1/2 z-10 rounded-full w-12 h-12 bg-neutralLighter/50 p-2 hover:bg-accent"
+      class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-neutralLighter/50 p-4 rounded-full w-8 h-8 flex items-center justify-center"
     >
-      ◀
+      <Icon
+        name="material-symbols:arrow-back-ios-rounded"
+        class="w-5 h-5 text-black"
+      />
     </button>
+
     <button
       ref="nextEl"
-      class="absolute right-0 top-1/2 -translate-y-1/2 z-10 rounded-full w-12 h-12 bg-neutralLighter/50 p-2 hover:bg-accent"
+      class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-neutralLighter/50 p-4 rounded-full w-8 h-8 flex items-center justify-center"
     >
-      ▶
+      <Icon
+        name="material-symbols:arrow-forward-ios-rounded"
+        class="w-5 h-5 text-black"
+      />
     </button>
 
     <Swiper
-      :slides-per-view="1"
+      class="w-full relative block z-0"
+      :slides-per-view="2"
       :space-between="16"
       :breakpoints="{
         640: { slidesPerView: 2 },
         768: { slidesPerView: 3 },
         1024: { slidesPerView: 4 },
       }"
-      :navigation="{
-        nextEl: nextEl,
-        prevEl: prevEl,
-      }"
+      :navigation="{ nextEl: nextEl, prevEl: prevEl }"
       @swiper="(swiper) => (swiperRef = swiper)"
-      class="w-full h-full"
     >
       <SwiperSlide
         v-for="(item, index) in items"
@@ -40,11 +45,10 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { ref, onMounted } from "vue";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 const props = defineProps<{
   items: any[];

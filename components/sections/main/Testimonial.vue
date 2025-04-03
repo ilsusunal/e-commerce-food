@@ -1,5 +1,5 @@
 <template>
-  <div class="items-center">
+  <SectionWrapper>
     <div class="md:flex justify-center items-center gap-16 mb-6">
       <div class="p-4 w-full">
         <NuxtImg
@@ -19,13 +19,14 @@
         />
       </div>
     </div>
-  </div>
+  </SectionWrapper>
 </template>
 
 <script setup lang="ts">
 import type { InfoCardItem } from "~/types/mainPage";
 import Title from "~/components/common/Title/Title.vue";
 import InfoCard from "~/components/common/Cards/InfoCard/InfoCard.vue";
+import SectionWrapper from "~/components/common/SectionWrapper/SectionWrapper.vue";
 
 const { testimonial } = defineProps<{
   testimonial: {

@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <SectionWrapper>
     <div class="relative">
       <NuxtImg
         :src="MAIL_SUBSCRIPTION_IMAGE"
         alt="Subscribe"
-        class="w-full rounded-xl"
+        class="md:w-full rounded-xl"
       />
       <div
         class="absolute inset-0 flex items-center justify-start pl-4 sm:pl-8 lg:pl-16"
@@ -25,7 +25,7 @@
         class="bg-neutralLighter/20 shadow-none"
       />
     </div>
-  </div>
+  </SectionWrapper>
 </template>
 
 <script setup lang="ts">
@@ -33,6 +33,7 @@ import type { InfoCardItem } from "~/types/mainPage";
 import { MAIL_SUBSCRIPTION_IMAGE } from "~/constants/constants";
 import SubscriptionForm from "~/components/common/SubscriptionForm/SubscriptionForm.vue";
 import InfoCard from "~/components/common/Cards/InfoCard/InfoCard.vue";
+import SectionWrapper from "~/components/common/SectionWrapper/SectionWrapper.vue";
 
 const { services } = defineProps<{
   services: InfoCardItem[];

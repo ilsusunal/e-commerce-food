@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[
-      'relative flex flex-col items-center my-2 md:my-10 gap-4 font-sans shadow-xl rounded-xl p-8 hover:scale-110 transition-transform duration-300 ease-in-out',
+      'relative flex flex-col items-center gap-4 font-sans shadow-xl rounded-xl p-8 hover:scale-110 transition-transform duration-300 ease-in-out',
       cardSizeClass,
     ]"
   >

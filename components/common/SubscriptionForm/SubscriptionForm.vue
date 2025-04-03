@@ -1,10 +1,12 @@
 <template>
   <div>
-    <div class="text-white my-8 font-sans">
-      <h1 class="text-3xl text-wrap max-w-[400px] font-semibold my-4">
+    <div class="text-white my-2 md:my-8 font-sans">
+      <h1
+        class="text-sm md:text-3xl text-wrap max-w-[400px] font-semibold my-1 md:my-4"
+      >
         {{ props.title }}
       </h1>
-      <h4 class="text-base">{{ props.description }}</h4>
+      <h4 class="text-xs md:text-base">{{ props.description }}</h4>
     </div>
     <form @submit.prevent="handleSubmit" class="w-full max-w-xl relative">
       <input
@@ -12,12 +14,12 @@
         v-model="email"
         placeholder="Your email address"
         required
-        class="p-4 rounded-full w-full text-neutral"
+        class="p-1 md:p-4 rounded-full w-full text-neutral"
       />
 
       <button
         type="submit"
-        class="absolute top-1/2 -translate-y-1/2 right-0 bg-accent hover:bg-primary text-white p-4 rounded-full transition"
+        class="absolute top-1/2 -translate-y-1/2 right-0 bg-accent hover:bg-primary text-white p-1 md:p-4 rounded-full transition"
       >
         Subscribe
       </button>
