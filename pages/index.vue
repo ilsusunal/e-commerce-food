@@ -1,16 +1,25 @@
 <template>
-  <main class="flex flex-col gap-6 md:gap-20">
-    <Hero />
-    <PopularCategories :categories="popularCategories" />
-    <DailyBestSells
-      :daily-best-sells="dailyBestSells"
-      :campaign-card="campaignCard"
-    />
-    <FeaturedRecipes :featured-recipes="featuredRecipes" />
-    <DealsOfTheDay :deals-of-the-day="dealsOfTheDay" />
-    <Testimonial :testimonial="testimonial" />
-    <MailSubscriptionAndServices :services="services" />
-  </main>
+  <Suspense>
+    <template #default>
+      <main class="flex flex-col gap-6 md:gap-20">
+        <Hero />
+        <PopularCategories :categories="popularCategories" />
+        <DailyBestSells
+          :daily-best-sells="dailyBestSells"
+          :campaign-card="campaignCard"
+        />
+        <FeaturedRecipes :featured-recipes="featuredRecipes" />
+        <DealsOfTheDay :deals-of-the-day="dealsOfTheDay" />
+        <Testimonial :testimonial="testimonial" />
+        <MailSubscriptionAndServices :services="services" />
+      </main>
+    </template>
+    <template #fallback>
+      <div class="min-h-screen flex items-center justify-center bg-white">
+        <div class="loader"></div>
+      </div>
+    </template>
+  </Suspense>
 </template>
 
 <script setup lang="ts">
@@ -31,3 +40,23 @@ const dealsOfTheDay = mockMainPageData.dealsOfTheDay;
 const testimonial = mockMainPageData.testimonial;
 const services = mockMainPageData.services;
 </script>
+
+<style scoped>
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #fdbc33;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>
