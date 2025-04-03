@@ -1,75 +1,93 @@
-# Nuxt Minimal Starter
+# 🍽️ Foodzy – Modern E-Commerce Food UI
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Foodzy is a modern, performance-oriented, and scalable e-commerce food platform interface. Developed with Nuxt 3, TailwindCSS, and component-driven architecture, it offers a fast and clean user experience.
 
-## Setup
+## 🚀 Technologies
 
-Make sure to install dependencies:
+- Nuxt 3 (Vue 3 + SSR)
+- TailwindCSS (JIT mode + custom theme)
+- Swiper.js (responsive slider)
+- Composable-based data handling
+- Vercel deployment compatible
+- Component-first modular directories (Atomic Design approach)
 
-```bash
-# npm
-npm install
+## 📁 Folder Structure
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+```
+components/
+│
+├── common/               # Reusable UI components (Button, Card, Title, etc.)
+│   └── Cards/
+│       ├── ProductCard/
+│       ├── CategoryCard/
+│       └── ...
+│
+├── layout/               # Header / Footer
+├── sections/main/        # Page sections (Hero, Testimonials, Deals, etc.)
+├── Buttons/              # CustomButton & variants
+├── Slider/               # SliderWrapper (with Swiper integration)
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## 📦 Installation
 
 ```bash
-# npm
-npm run dev
+# Clone the project
+git clone https://github.com/username/foodzy.git
+cd foodzy
 
-# pnpm
+# Install dependencies
+pnpm install  # or yarn / npm install
+
+# Start local development
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## 🧲 Mock Data
 
-Build the application for production:
+All page data is retrieved from:
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+```javascript
+import { mockMainPageData } from "~/mock/mainPage";
 ```
 
-Locally preview production build:
+This structure allows you to develop easily without an API connection.
 
-```bash
-# npm
-npm run preview
+## 📱 Responsive & UX
 
-# pnpm
-pnpm preview
+- Mobile-first responsive design
+- Consistent padding/margin between sections
+- Cards, sliders, and forms have elegant transition effects
+- Scroll overflow and layout issues are optimized
 
-# yarn
-yarn preview
+## 🧱 Component Design
 
-# bun
-bun run preview
+Each card component is managed with props like variant and size. For example:
+
+```vue
+<ProductCard :product-name="..." :price="..." variant="detailed" />
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+The slider is used flexibly like this:
+
+```vue
+<SliderWrapper :items="items">
+  <template #default="{ item }">
+    <ProductCard :product="item" />
+  </template>
+</SliderWrapper>
+```
+
+## 🌐 Deployment (Vercel)
+
+- Connect the project to Vercel
+- Auto-build configuration for Nuxt is automatically recognized
+- You can add vercel.json if needed (not required)
+
+## 🧼 Development Notes
+
+- SectionWrapper aligns all sections in the same layout
+- Fonts: Poppins (default), Quicksand (for Titles)
+- Global Tailwind color theme:
+  - primary: #FDBC33
+  - accent: #F53E32
+  - secondary: #3BB77E
