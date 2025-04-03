@@ -6,7 +6,7 @@
       >
         {{ props.title }}
       </h1>
-      <h4 class="text-xs md:text-base">{{ props.description }}</h4>
+      <h4 class="text-xs md:text-sm text-white/50">{{ props.description }}</h4>
     </div>
     <form @submit.prevent="handleSubmit" class="w-full md:max-w-xl relative">
       <input

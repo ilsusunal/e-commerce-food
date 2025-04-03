@@ -2,7 +2,10 @@
   <div
     :class="`flex flex-col text-${textLocation} my-6 gap-2 md:gap-4 font-sans text-wrap`"
   >
-    <h4 v-if="props.description" class="text-accent text-base md:text-xl">
+    <h4
+      v-if="props.description"
+      class="text-accent font-semibold text-sm md:text-base"
+    >
       {{ props.description }}
     </h4>
     <h1 :class="`${titleSize} ${titleFont} font-semibold`">

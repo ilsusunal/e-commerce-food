@@ -1,6 +1,6 @@
 <template>
   <section :class="wrapperClass">
-    <div class="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="w-full max-w-6xl lg:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <slot />
     </div>
   </section>

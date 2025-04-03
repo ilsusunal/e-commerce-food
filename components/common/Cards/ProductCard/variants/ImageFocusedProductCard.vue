@@ -17,7 +17,9 @@
               score
             }}
           </p>
-          <h4 class="text-xs text-neutralLight">by {{ productBrand }}</h4>
+          <h4 class="text-xs text-neutralLight">
+            by <span class="text-secondary">{{ productBrand }}</span>
+          </h4>
         </div>
 
         <div class="flex justify-between mt-auto">

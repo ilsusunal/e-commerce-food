@@ -3,22 +3,16 @@
     <button
       type="button"
       ref="prevEl"
-      class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-neutralLighter/50 p-4 rounded-full w-8 h-8 flex items-center justify-center"
+      class="absolute left-2 top-1/3 -translate-y-1/2 z-10 bg-neutralLighter/50 p-4 rounded-full w-8 h-8 flex items-center justify-center hover:bg-primary hover:text-white"
     >
-      <Icon
-        name="material-symbols:arrow-back-ios-rounded"
-        class="w-5 h-5 text-black"
-      />
+      ←
     </button>
 
     <button
       ref="nextEl"
-      class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-neutralLighter/50 p-4 rounded-full w-8 h-8 flex items-center justify-center"
+      class="absolute right-2 top-1/3 -translate-y-1/2 z-10 bg-neutralLighter/50 p-4 rounded-full w-8 h-8 flex items-center justify-center hover:bg-primary hover:text-white"
     >
-      <Icon
-        name="material-symbols:arrow-forward-ios-rounded"
-        class="w-5 h-5 text-black"
-      />
+      →
     </button>
 
     <Swiper

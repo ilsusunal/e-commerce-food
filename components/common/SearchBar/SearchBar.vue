@@ -1,6 +1,6 @@
 <template>
   <div
-    class="hidden md:flex items-center h-12 w-full max-w-xl border border-secondary rounded-md overflow-hidden"
+    class="hidden md:flex items-center h-10 w-full max-w-lg border border-secondary rounded-md overflow-hidden"
   >
     <input
       type="text"
