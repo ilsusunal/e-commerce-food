@@ -2,6 +2,8 @@
 
 Foodzy is a modern, performance-oriented, and scalable e-commerce food platform interface. Developed with Nuxt 3, TailwindCSS, and component-driven architecture, it offers a fast and clean user experience.
 
+To checkout live demo : [Demo Link](https://e-commerce-food-steel.vercel.app/)
+
 ## 🚀 Technologies
 
 - Nuxt 3 (Vue 3 + SSR)
