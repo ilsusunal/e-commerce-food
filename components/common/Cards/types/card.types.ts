@@ -1,3 +1,5 @@
+import type { CampaignCardItem, InfoCard, ProductItem } from "~/types/mainPage";
+
 export interface CategoryCardProps {
   title: string;
   description: string;
@@ -6,26 +8,16 @@ export interface CategoryCardProps {
   cardSize?: "small" | "large" | "default";
   variant?: "default" | "compact" | "bordered";
 }
-export interface CampaignCardProps {
-  image: string;
-  campaignName: string;
-  link: string;
-  variant?: "default"; 
+export interface CampaignCardProps extends CampaignCardItem {
+  variant?: "default";
 }
 export interface InfoCardProps {
   title: string;
   description: string;
   image: string;
-  variant?: 'default' | 'vertical' | 'bordered';
+  variant?: "default" | "vertical" | "bordered";
+  size?: "sm" | "md" | "lg";
 }
-export interface ProductCardProps {
-  id: string | number;
-  productName: string;
-  price: number;
-  discountedPrice: number;
-  productBrand: string;
-  score: number;
-  label?: string;
-  productImages: string;
-  variant?: 'detailed' | 'image-focused' | 'basic';
+export interface ProductCardProps extends ProductItem {
+  variant?: "detailed" | "image-focused" | "basic";
 }

@@ -1,12 +1,17 @@
 <template>
   <div class="relative w-64 mb-20">
-    <NuxtImg :src="productImages" :alt="productName" class="w-64 h-64 object-cover mt-4 z-0 rounded-xl" />
+    <NuxtImg
+      :src="productImages"
+      :alt="productName"
+      class="w-64 h-64 object-cover mt-4 z-0 rounded-xl"
+    />
 
     <div
-      class="absolute left-1/2 -translate-x-1/2 -bottom-24 w-[240px] h-[180px] p-4 font-sans shadow-xl rounded-xl bg-white z-10">
+      class="absolute left-1/2 -translate-x-1/2 -bottom-24 w-[240px] h-[180px] p-4 font-sans shadow-xl rounded-xl bg-white z-10"
+    >
       <div class="flex flex-col gap-1 h-full">
         <div class="flex flex-col gap-2">
-          <h1 class="text-sm text-wrap font-semibold">{{ productName }}</h1>
+          <h1 class="text-sm font-semibold">{{ productName }}</h1>
           <p class="flex items-center text-sm">
             <Icon name="material-symbols:star" class="mr-2 text-primary" />{{
               score
@@ -22,7 +27,9 @@
               $ {{ price }}
             </p>
           </div>
-          <button class="w-20 text-sm bg-accent text-white rounded py-1 hover:bg-primary">
+          <button
+            class="w-20 text-sm bg-accent text-white rounded py-1 hover:bg-primary"
+          >
             Add
           </button>
         </div>
@@ -32,7 +39,7 @@
 </template>
 
 <script setup lang="ts">
-import type { ProductItem } from "~/types/mainPage";
+import type { ProductCardProps } from "~/components/common/Cards/types/card.types";
 
 const {
   productName,
@@ -41,5 +48,5 @@ const {
   productBrand,
   score,
   productImages,
-} = defineProps<ProductItem>();
+} = defineProps<ProductCardProps>();
 </script>

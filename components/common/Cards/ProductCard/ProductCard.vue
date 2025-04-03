@@ -4,22 +4,17 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import type { ProductItem } from "~/types/mainPage";
+import type { ProductCardProps } from "~/components/common/Cards/types/card.types";
 import DetailedProductCard from "./variants/DetailedProductCard.vue";
 import ImageFocusedProductCard from "./variants/ImageFocusedProductCard.vue";
 
-interface Props extends ProductItem {
-  variant: "detailed" | "image-focused" | "basic";
-}
-
-const props = defineProps<Props>();
+const props = defineProps<ProductCardProps>();
 
 const currentVariant = computed(() => {
   switch (props.variant) {
-    case "detailed":
-      return DetailedProductCard;
     case "image-focused":
       return ImageFocusedProductCard;
+    case "detailed":
     default:
       return DetailedProductCard;
   }
