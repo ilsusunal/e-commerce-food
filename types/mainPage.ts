@@ -1,9 +1,9 @@
 export interface MainPageData {
   popularCategories: CategoryItem[];
   dailyBestSells: DailyBestSells;
-  campaingCards: CampaignCardProps[];
+  campaingCards: CampaignCardItem[];
   featuredRecipes: Recipe[];
-  dealsOfTheDay: Product[];
+  dealsOfTheDay: ProductItem[];
   testimonial: {
     title: string;
     image: string;
@@ -30,13 +30,14 @@ export interface MainPageData {
   };
 }
 
-export interface CampaignCardProps {
+export interface CampaignCardItem {
+  id: number;
   image: string;
   campaignName: string;
   link: string;
 }
 export interface DailyBestSells {
-  [key: string]: Product[];
+  [key: string]: ProductItem[];
 }
 export interface CategoryItem {
   id: number;
@@ -44,7 +45,8 @@ export interface CategoryItem {
   itemAmount: string;
   categoryImage: string;
 }
-export interface Product {
+export interface ProductItem {
+  id: number;
   productName: string;
   price: number;
   discountedPrice: number;
@@ -55,11 +57,13 @@ export interface Product {
   productImages: string;
 }
 export interface Recipe {
+  id: number;
   recipeName: string;
   recipeText: string;
   recipeImage: string;
 }
 export interface InfoCard {
+  id: number;
   title: string;
   text: string;
   icon: string;

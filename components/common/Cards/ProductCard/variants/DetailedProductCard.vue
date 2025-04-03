@@ -46,7 +46,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Product } from "~/types/mainPage";
+import type { ProductItem } from "~/types/mainPage";
 
 const {
   productName,
@@ -56,7 +56,7 @@ const {
   score,
   label,
   productImages,
-} = defineProps<Product>();
+} = defineProps<ProductItem>();
 
 const labelClass = computed(() => {
   switch (label) {

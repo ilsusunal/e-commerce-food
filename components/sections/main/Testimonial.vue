@@ -11,8 +11,8 @@
       <div class="flex flex-col items-start gap-4">
         <Title :title="testimonial.title" title-size="text-4xl" />
         <CardWithIcon
-          v-for="(item, index) in testimonial.testimonials"
-          :key="index"
+          v-for="item in testimonial.testimonials"
+          :key="item.id"
           :description="item.text"
           :image="item.icon"
           :title="item.title"
@@ -27,12 +27,12 @@ import type { InfoCard } from "~/types/mainPage";
 import Title from "~/components/common/Title/Title.vue";
 import CardWithIcon from "~/components/common/Cards/CardWithIcon.vue";
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const props = defineProps<{
+const {testimonial} = defineProps<{
   testimonial: {
     title: string;
     image: string;
     testimonials: InfoCard[];
   };
 }>();
+
 </script>

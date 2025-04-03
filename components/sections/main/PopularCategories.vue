@@ -1,6 +1,6 @@
 <template>
   <div class="w-fit mx-auto">
-    <Title :description="DESCRIPTION" :title="TITLE">
+    <Title :description="DESCRIPTION" :title="TITLE" />
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 w-full">
         <CategoryCard 
           v-for="category in categories" 
@@ -9,7 +9,6 @@
           :description="category.itemAmount" :image="category.categoryImage" 
         />
       </div>
-    </title>
   </div>
 </template>
 
@@ -21,6 +20,7 @@ import CategoryCard from "~/components/common/Cards/CategoryCard.vue";
 const { categories } = defineProps<{
   categories: CategoryItem[];
 }>();
+
 const TITLE = "Popular Categories";
 const DESCRIPTION = "CUSTOMER FAVORITES";
 

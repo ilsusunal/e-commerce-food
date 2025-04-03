@@ -1,7 +1,7 @@
 <template>
   <header class="bg-white shadow flex items-center justify-around font-sans">
     <NuxtImg
-      src="/images/mainPage/foodzy_logo.svg"
+      :src="LOGO"
       width="200"
       height="100"
       alt="Foodzy Logo"
@@ -34,5 +34,6 @@
 </template>
 
 <script setup>
-import SearchBar from "./../common/SearchBar/SearchBar.vue";
+import { LOGO } from '~/constants/constants';
+import SearchBar from '~/components/common/SearchBar/SearchBar.vue';
 </script>

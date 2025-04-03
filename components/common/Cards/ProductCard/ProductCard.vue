@@ -4,11 +4,11 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import type { Product } from "~/types/mainPage";
+import type { ProductItem } from "~/types/mainPage";
 import DetailedProductCard from "./variants/DetailedProductCard.vue";
 import ImageFocusedProductCard from "./variants/ImageFocusedProductCard.vue";
 
-interface Props extends Product {
+interface Props extends ProductItem {
   variant: "detailed" | "image-focused" | "basic";
 }
 

@@ -44,6 +44,7 @@ export const mockMainPageData: MainPageData = {
         score: 4.8,
         label: "Save 35%",
         productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
+        id: 1
       },
       {
         productName: "Angie’s Boomchickapop Sweet and womnies",
@@ -54,6 +55,7 @@ export const mockMainPageData: MainPageData = {
         score: 4.9,
         label: "Sale",
         productImages: "/images/mainPage/dailyBestSells/featured_hodo_2.svg",
+        id: 2
       },
       {
         productName: "Foster Farms Takeout Crispy Classic",
@@ -64,6 +66,7 @@ export const mockMainPageData: MainPageData = {
         score: 4.5,
         label: "Best Sale",
         productImages: "/images/mainPage/dailyBestSells/featured_hodo_3.svg",
+        id: 3
       },
       {
         productName: "Blue Diamond Almonds Lightly Salted",
@@ -74,6 +77,7 @@ export const mockMainPageData: MainPageData = {
         score: 4.8,
         label: "Save 15%",
         productImages: "/images/mainPage/dailyBestSells/featured_hodo_4.svg",
+        id: 4
       },
       {
         productName: "Chobani Complete Vanilla Greek Yogurt",
@@ -84,6 +88,7 @@ export const mockMainPageData: MainPageData = {
         score: 4.6,
         label: "Best Seller",
         productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
+        id: 5
       },
     ],
     Popular: [
@@ -96,6 +101,7 @@ export const mockMainPageData: MainPageData = {
         score: 4.6,
         label: "Best Seller",
         productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
+        id: 6
       },
       {
         productName: "Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g",
@@ -106,6 +112,7 @@ export const mockMainPageData: MainPageData = {
         score: 4.4,
         label: "Best Seller",
         productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
+        id: 7
       },
       {
         productName: "Gorton’s Beer Battered Fish Fillets with soft paper",
@@ -116,6 +123,7 @@ export const mockMainPageData: MainPageData = {
         score: 4.2,
         label: "Best Seller",
         productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
+        id: 8
       },
       {
         productName: "Haagen-Dazs Caramel Cone Ice Cream Ketchup",
@@ -126,6 +134,7 @@ export const mockMainPageData: MainPageData = {
         score: 4.3,
         label: "Best Seller",
         productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
+        id: 9
       },
     ],
     New: [
@@ -138,6 +147,7 @@ export const mockMainPageData: MainPageData = {
         score: 4.0,
         label: "New",
         productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
+        id: 10
       },
       {
         productName: "Perdue Simply Smart Organics Gluten Free",
@@ -148,6 +158,7 @@ export const mockMainPageData: MainPageData = {
         score: 4.2,
         label: "New",
         productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
+        id: 11
       },
       {
         productName: "Signature Wood-Fired Mushroom and Caramelized",
@@ -158,6 +169,7 @@ export const mockMainPageData: MainPageData = {
         score: 3.5,
         label: "New",
         productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
+        id: 12
       },
       {
         productName: "Simply Lemonade with Raspberry Juice",
@@ -168,6 +180,7 @@ export const mockMainPageData: MainPageData = {
         score: 4.0,
         label: "New",
         productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
+        id: 13
       },
     ],
   },
@@ -176,6 +189,7 @@ export const mockMainPageData: MainPageData = {
       image: "/images/mainPage/dailyBestSells/campaignCard_1.svg",
       campaignName: "Bring nature into your home",
       link: "/",
+      id: 1
     },
   ],
   featuredRecipes: [
@@ -183,16 +197,19 @@ export const mockMainPageData: MainPageData = {
       recipeName: "Fattoush salad",
       recipeText: "Description of the item",
       recipeImage: "/images/mainPage/featuredRecipes/rec_fattoush_salad.svg",
+      id: 1
     },
     {
       recipeName: "Vegetable salad",
       recipeText: "Description of the item",
       recipeImage: "/images/mainPage/featuredRecipes/rec_veg_salad.svg",
+      id: 2
     },
     {
       recipeName: "Egg vegi salad",
       recipeText: "Description of the item",
       recipeImage: "/images/mainPage/featuredRecipes/rec_egg_vegi_salad.svg",
+      id: 3
     },
   ],
   dealsOfTheDay: [
@@ -205,6 +222,7 @@ export const mockMainPageData: MainPageData = {
       score: 4.0,
       label: "",
       productImages: "/images/mainPage/dealsOfTheDay/deal_of_day_1.svg",
+      id: 0
     },
     {
       productName: "Perdue Simply Smart Organics Gluten Free",
@@ -215,6 +233,7 @@ export const mockMainPageData: MainPageData = {
       score: 4.2,
       label: "",
       productImages: "/images/mainPage/dealsOfTheDay/deal_of_day_2.svg",
+      id: 0
     },
     {
       productName: "Signature Wood-Fired Mushroom and Caramelized",
@@ -225,6 +244,7 @@ export const mockMainPageData: MainPageData = {
       score: 3.5,
       label: "",
       productImages: "/images/mainPage/dealsOfTheDay/deal_of_day_3.svg",
+      id: 0
     },
     {
       productName: "Simply Lemonade with Raspberry Juice",
@@ -235,6 +255,7 @@ export const mockMainPageData: MainPageData = {
       score: 4.0,
       label: "",
       productImages: "/images/mainPage/dealsOfTheDay/deal_of_day_4.svg",
+      id: 0
     },
   ],
   testimonial: {
@@ -245,16 +266,19 @@ export const mockMainPageData: MainPageData = {
         title: "Convenient and Reliable",
         text: "Whether you dine in, take out, or order delivery, our service is convenient, fast, and reliable, making mealtime hassle-free.",
         icon: "/images/mainPage/testimonials/testimonial_1.svg",
+        id: 1
       },
       {
         title: "Variety of Options",
         text: "From hearty meals to light snacks, we offer a wide range of options to suit every taste and craving.",
         icon: "/images/mainPage/testimonials/testimonial_2.svg",
+        id: 2
       },
       {
         title: "Eat Burger",
         text: "Our burgers are grilled to perfection, with juicy patties and flavorful toppings that make every bite a delicious experience.",
         icon: "/images/mainPage/testimonials/testimonial_3.svg",
+        id: 3
       },
     ],
   },
@@ -263,26 +287,31 @@ export const mockMainPageData: MainPageData = {
       title: "Best prices & offers",
       text: "Orders $50 or more",
       icon: "/images/mainPage/services/service_1.svg",
+      id: 4
     },
     {
       title: "Free delivery",
       text: "24/7 amazing services",
       icon: "/images/mainPage/services/service_2.svg",
+      id: 5
     },
     {
       title: "Great daily deal",
       text: "When you sign up",
       icon: "/images/mainPage/services/service_3.svg",
+      id: 6
     },
     {
       title: "Wide assortment",
       text: "Mega Discounts",
       icon: "/images/mainPage/services/service_4.svg",
+      id: 7
     },
     {
       title: "Easy returns",
       text: "Within 30 days",
       icon: "/images/mainPage/services/service_5.svg",
+      id: 8
     },
   ],
   footer: {
