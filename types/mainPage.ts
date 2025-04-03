@@ -7,9 +7,9 @@ export interface MainPageData {
   testimonial: {
     title: string;
     image: string;
-    testimonials: InfoCard[];
+    testimonials: InfoCardItem[];
   };
-  services: InfoCard[];
+  services: InfoCardItem[];
   footer: {
     about: {
       logo: string;
@@ -62,7 +62,7 @@ export interface Recipe {
   recipeText: string;
   recipeImage: string;
 }
-export interface InfoCard {
+export interface InfoCardItem {
   id: number;
   title: string;
   text: string;

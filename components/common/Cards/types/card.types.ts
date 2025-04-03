@@ -1,4 +1,4 @@
-import type { CampaignCardItem, InfoCard, ProductItem } from "~/types/mainPage";
+import type { CampaignCardItem, ProductItem } from "~/types/mainPage";
 
 export interface CategoryCardProps {
   title: string;

@@ -10,7 +10,7 @@
       </div>
       <div class="flex flex-col items-start gap-4">
         <Title :title="testimonial.title" title-size="text-4xl" />
-        <CardWithIcon
+        <InfoCard
           v-for="item in testimonial.testimonials"
           :key="item.id"
           :description="item.text"
@@ -23,16 +23,15 @@
 </template>
 
 <script setup lang="ts">
-import type { InfoCard } from "~/types/mainPage";
+import type { InfoCardItem } from "~/types/mainPage";
 import Title from "~/components/common/Title/Title.vue";
-import CardWithIcon from "~/components/common/Cards/CardWithIcon.vue";
+import InfoCard from "~/components/common/Cards/InfoCard/InfoCard.vue";
 
-const {testimonial} = defineProps<{
+const { testimonial } = defineProps<{
   testimonial: {
     title: string;
     image: string;
-    testimonials: InfoCard[];
+    testimonials: InfoCardItem[];
   };
 }>();
-
 </script>

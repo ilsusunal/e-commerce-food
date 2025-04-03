@@ -5,25 +5,22 @@
       <Tabs v-model="selectedTab" :tabs="tabs" />
     </div>
     <div class="flex flex-col lg:flex-row gap-4 h-[480px]">
-      <CampaignCard 
-        :image="campaignCard.image" 
-        :campaign-name="campaignCard.campaignName" 
-        :link="campaignCard.link"
-        class="w-[260px] h-[480px] shrink-0" 
+      <CampaignCard
+        v-bind="campaignCard"
+        class="w-[260px] h-[480px] shrink-0"
       />
-      <SliderWrapper :items="currentProducts" class="flex-1 h-full overflow-hidden">
+      <SliderWrapper
+        :items="currentProducts"
+        class="flex-1 h-full overflow-hidden"
+        :key="selectedTab"
+      >
         <template #default="{ item }">
-          <ProductCard 
-            :product-name="item.productName" 
-            :price="item.price" 
-            :discounted-price="item.discountedPrice"
-            :discount-amunt="item.discountAmunt" 
-            :product-brand="item.productBrand" 
-            :score="item.score"
-            :label="item.label" 
-            :product-images="item.productImages" 
-            variant="detailed" 
-            class="h-[480px]" 
+          <ProductCard
+            v-bind="{
+              ...item,
+              variant: 'detailed',
+            }"
+            class="h-[480px]"
           />
         </template>
       </SliderWrapper>
@@ -37,8 +34,8 @@ import type { DailyBestSells, CampaignCardItem } from "~/types/mainPage";
 import Title from "~/components/common/Title/Title.vue";
 import ProductCard from "~/components/common/Cards/ProductCard/ProductCard.vue";
 import Tabs from "~/components/common/Tabs/Tabs.vue";
-import CampaignCard from "~/components/common/Cards/CampaignCard.vue";
 import SliderWrapper from "~/components/common/Slider/SliderWrapper.vue";
+import CampaignCard from "~/components/common/Cards/CampaignCard/CampaignCard.vue";
 
 const { dailyBestSells, campaignCard } = defineProps<{
   dailyBestSells: DailyBestSells;
@@ -58,5 +55,4 @@ onMounted(() => {
 const currentProducts = computed(() => {
   return dailyBestSells[selectedTab.value] || [];
 });
-
 </script>

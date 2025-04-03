@@ -4,18 +4,10 @@
       <Title :title="TITLE" title-size="text-3xl" />
     </div>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
-      <ProductCard 
-        v-for="product in dealsOfTheDay"  
-        :id="product.id" 
+      <ProductCard
+        v-for="product in dealsOfTheDay"
         :key="product.id"
-        :product-name="product.productName"
-        :price="product.price" :discounted-price="product.discountedPrice" 
-        :discount-amunt="product.discountAmunt"
-        :product-brand="product.productBrand" 
-        :score="product.score" 
-        :label="product.label"
-        :product-images="product.productImages"
-        variant="image-focused" 
+        v-bind="{ ...product, variant: 'image-focused' }"
       />
     </div>
   </div>

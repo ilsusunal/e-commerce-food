@@ -1,9 +1,5 @@
 <template>
-  <button
-    type="button"
-    :class="buttonClasses"
-    @click="isSelected = !isSelected"
-  >
+  <button type="button" :class="buttonClasses">
     <Icon
       :name="currentIcon"
       :class="[
@@ -18,7 +14,14 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-const {icon, selectedIcon, buttonClass, selectedButtonClass, iconClass, selectedIconClass} = defineProps({
+const {
+  icon,
+  selectedIcon,
+  buttonClass,
+  selectedButtonClass,
+  iconClass,
+  selectedIconClass,
+} = defineProps({
   icon: {
     type: String,
     required: true,
@@ -55,9 +58,10 @@ const currentIcon = computed(() =>
   isSelected.value && selectedIcon ? selectedIcon : icon
 );
 
-const buttonClasses = computed(() =>
-  `${isSelected.value ? selectedButtonClass : buttonClass} transition-colors duration-300`
+const buttonClasses = computed(
+  () =>
+    `${
+      isSelected.value ? selectedButtonClass : buttonClass
+    } transition-colors duration-300`
 );
-
-
 </script>

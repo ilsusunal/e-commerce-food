@@ -22,11 +22,14 @@
       <CategoryCard
         v-for="recipe in featuredRecipes"
         :key="recipe.id"
-        :title="recipe.recipeName"
-        :description="recipe.recipeText"
-        :image="recipe.recipeImage"
-        card-size="large"
-        :label="true"
+        v-bind="{
+          title: recipe.recipeName,
+          description: recipe.recipeText,
+          image: recipe.recipeImage,
+          cardSize: 'large',
+          label: true,
+          variant: 'default',
+        }"
       />
     </div>
   </div>
@@ -35,10 +38,10 @@
 <script setup lang="ts">
 import type { Recipe } from "~/types/mainPage";
 import Title from "~/components/common/Title/Title.vue";
-import CategoryCard from "~/components/common/Cards/CategoryCard.vue";
 import ButtonWithIcon from "~/components/common/Buttons/ButtonWithIcon.vue";
+import CategoryCard from "~/components/common/Cards/CategoryCard/CategoryCard.vue";
 
-const {featuredRecipes} = defineProps<{
+const { featuredRecipes } = defineProps<{
   featuredRecipes: Recipe[];
 }>();
 
@@ -47,7 +50,6 @@ const DESCRIPTION = "SPECIAL DISHES";
 
 const buttons = [
   { icon: "material-symbols:arrow-back-ios-rounded" },
-  { icon: "material-symbols:arrow-forward-ios-rounded" }
+  { icon: "material-symbols:arrow-forward-ios-rounded" },
 ];
-
 </script>
