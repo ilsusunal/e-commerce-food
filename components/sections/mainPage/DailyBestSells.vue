@@ -4,31 +4,32 @@
       <Title title="Daily Best Sells" title-size="text-3xl" />
       <Tabs v-model="selectedTab" :tabs="tabs" />
     </div>
-    <div class="flex gap-4">
+    <div class="flex flex-col lg:flex-row gap-4 h-[480px]">
       <CampaignCard
         :image="campaignCard.image"
         :campaign-name="campaignCard.campaignName"
         :link="campaignCard.link"
-        class="w-[400px] h-[480px]"
+        class="w-[260px] h-[480px] shrink-0"
       />
-      <div
-        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-full"
+      <SliderWrapper
+        :items="currentProducts"
+        class="flex-1 h-full overflow-hidden"
       >
-        <ProductCard
-          v-for="(product, index) in currentProducts"
-          :key="selectedTab + '-' + index"
-          :product-name="product.productName"
-          :price="product.price"
-          :discounted-price="product.discountedPrice"
-          :discount-amunt="product.discountAmunt"
-          :product-brand="product.productBrand"
-          :score="product.score"
-          :label="product.label"
-          :product-images="product.productImages"
-          variant="detailed"
-          class="h-[480px]"
-        />
-      </div>
+        <template #default="{ item }">
+          <ProductCard
+            :product-name="item.productName"
+            :price="item.price"
+            :discounted-price="item.discountedPrice"
+            :discount-amunt="item.discountAmunt"
+            :product-brand="item.productBrand"
+            :score="item.score"
+            :label="item.label"
+            :product-images="item.productImages"
+            variant="detailed"
+            class="h-[480px]"
+          />
+        </template>
+      </SliderWrapper>
     </div>
   </div>
 </template>
@@ -40,6 +41,7 @@ import ProductCard from "~/components/common/Cards/ProductCard/ProductCard.vue";
 import type { DailyBestSells, CampaignCardProps } from "~/types/mainPage";
 import Tabs from "~/components/common/Tabs/Tabs.vue";
 import CampaignCard from "~/components/common/Cards/CampaignCard.vue";
+import SliderWrapper from "~/components/common/Slider/SliderWrapper.vue";
 
 const props = defineProps<{
   dailyBestSells: DailyBestSells;

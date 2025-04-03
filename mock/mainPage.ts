@@ -70,6 +70,16 @@ export const mockMainPageData: MainPageData = {
         label: "Save 15%",
         productImages: "/images/mainPage/dailyBestSells/featured_hodo_4.svg",
       },
+      {
+        productName: "Chobani Complete Vanilla Greek Yogurt",
+        price: 55.8,
+        discountedPrice: 54.85,
+        discountAmunt: 0,
+        productBrand: "NestFood",
+        score: 4.6,
+        label: "Best Seller",
+        productImages: "/images/mainPage/dailyBestSells/featured_hodo_1.svg",
+      },
     ],
     Popular: [
       {
