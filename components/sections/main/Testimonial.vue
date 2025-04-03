@@ -5,7 +5,7 @@
         <NuxtImg
           :src="testimonial.image"
           :alt="testimonial.title"
-          class="w-full h-[500px] mt-4 rounded-3xl"
+          class="w-full md:h-[500px] mt-4 rounded-3xl"
         />
       </div>
       <div class="flex flex-col items-start gap-4">

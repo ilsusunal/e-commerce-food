@@ -2,7 +2,7 @@
   <SectionWrapper>
     <Title :description="DESCRIPTION" :title="TITLE" />
     <div
-      class="items-center grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-8 w-full"
+      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1 md:gap-8 w-full justify-items-center"
     >
       <CategoryCard
         v-for="category in categories"

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="text-white my-2 md:my-8 font-sans">
+    <div :class="`text-${textColor} my-12 md:my-8 font-sans`">
       <h1
         class="text-sm md:text-3xl text-wrap max-w-[400px] font-semibold my-1 md:my-4"
       >
@@ -8,13 +8,13 @@
       </h1>
       <h4 class="text-xs md:text-base">{{ props.description }}</h4>
     </div>
-    <form @submit.prevent="handleSubmit" class="w-full max-w-xl relative">
+    <form @submit.prevent="handleSubmit" class="w-full md:max-w-xl relative">
       <input
         type="email"
         v-model="email"
         placeholder="Your email address"
         required
-        class="p-1 md:p-4 rounded-full w-full text-neutral"
+        class="p-1 md:p-4 rounded-full border-2 md:border-none w-full text-neutral"
       />
 
       <button
@@ -41,6 +41,11 @@ const props = defineProps({
   title: {
     type: String,
     required: true,
+  },
+  textColor: {
+    type: String,
+    required: false,
+    default: "white",
   },
 });
 

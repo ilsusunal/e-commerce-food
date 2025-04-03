@@ -1,11 +1,6 @@
 <template>
-  <header class="bg-white shadow flex items-center justify-around font-sans">
-    <NuxtImg
-      :src="LOGO"
-      width="200"
-      height="100"
-      alt="Foodzy Logo"
-    />
+  <header class="bg-white shadow flex items-center justify-around font-poppins">
+    <NuxtImg :src="LOGO" width="200" height="100" alt="Foodzy Logo" />
     <SearchBar />
     <nav class="hidden md:flex items-center space-x-6 text-[15px]">
       <NuxtLink to="/" class="text-black hover:text-primary flex items-center">
@@ -34,6 +29,6 @@
 </template>
 
 <script setup>
-import { LOGO } from '~/constants/constants';
-import SearchBar from '~/components/common/SearchBar/SearchBar.vue';
+import { LOGO } from "~/constants/constants";
+import SearchBar from "~/components/common/SearchBar/SearchBar.vue";
 </script>

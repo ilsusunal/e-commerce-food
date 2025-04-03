@@ -1,6 +1,6 @@
 <template>
   <header
-    class="hidden bg-white shadow-md shadow-black/10 py-2 px-4 md:flex items-center justify-around relative z-10 font-sans"
+    class="hidden bg-white shadow-md shadow-black/10 py-2 px-4 md:flex items-center justify-around relative z-10 font-poppins"
   >
     <div
       class="flex items-center text-black hover:text-primary cursor-pointer border rounded border-gray-200 p-2"

@@ -1,11 +1,15 @@
 <template>
-  <footer class="bg-neutralLighter/20 p-20 mt-32">
-    <div class="space-y-4 md:flex justify-between gap-8 mb-8 max-w-6xl mx-auto">
+  <footer
+    class="bg-neutralLighter/20 px-4 pt-4 md:px-20 md:pt-20 mt-8 md:mt-32 flex flex-col"
+  >
+    <div
+      class="space-y-4 md:flex justify-between gap-16 mb-8 max-w-5xl mx-auto"
+    >
       <!-- About Section -->
-      <div class="md:max-w-[400px]">
+      <div class="md:max-w-[300px]">
         <NuxtImg :src="footer.about.logo" alt="Foodzy Logo" class="w-48 mb-4" />
         <p class="text-neutralLight">{{ footer.about.description }}</p>
-        <ul class="mt-4 space-y-2">
+        <ul class="mt-4 space-y-4">
           <li
             v-for="(item, i) in footer.about.communication"
             :key="i"
@@ -22,7 +26,7 @@
         <h2 class="font-semibold mb-2 text-xl">{{ title }}</h2>
         <ul class="space-y-2 text-neutralLight">
           <li v-for="(link, i) in items" :key="i">
-            <NuxtLink :to="link.link" class="hover:text-accent">{{
+            <NuxtLink :to="link.link" class="hover:text-accent text-sm">{{
               link.text
             }}</NuxtLink>
           </li>
@@ -30,7 +34,7 @@
       </div>
 
       <!-- Social Media -->
-      <div>
+      <div class="md:max-w-[300px]">
         <h2 class="font-semibold mb-2 text-xl">Subscribe Our Newsletter</h2>
         <input
           type="email"
@@ -64,8 +68,11 @@
       </div>
     </div>
 
-    <div class="text-center text-sm text-neutralDark mt-auto">
-      © 2025 Foodzy, All rights reserved.
+    <div
+      class="py-5 text-center text-sm text-neutralDark mt-auto border border-t-neutralLighter"
+    >
+      © 2025 <span class="text-accent font-semibold">Foodzy</span>, All rights
+      reserved.
     </div>
   </footer>
 </template>

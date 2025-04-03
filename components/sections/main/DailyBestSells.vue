@@ -3,10 +3,10 @@
     <div
       class="flex items-center flex-col md:flex-row md:justify-between gap-4 mb-6"
     >
-      <Title :title="TITLE" title-size="text-3xl" />
+      <Title :title="TITLE" title-size="text-3xl" titleFont="font-quicksand" />
       <Tabs v-model="selectedTab" :tabs="tabs" />
     </div>
-    <div class="space-y-4 md:flex flex-col lg:flex-row gap-4 md:h-[480px]">
+    <div class="flex flex-col md:flex-row gap-4 md:h-[480px] overflow-hidden">
       <CampaignCard
         v-bind="campaignCard"
         class="md:w-[260px] md:h-[480px] shrink-0"
@@ -14,7 +14,7 @@
       <SliderWrapper
         :items="currentProducts"
         :key="selectedTab"
-        class="flex-1 h-full md:overflow-hidden"
+        class="flex-1 h-full overflow-hidden"
       >
         <template #default="{ item }">
           <ProductCard

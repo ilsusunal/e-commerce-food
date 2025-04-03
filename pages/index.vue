@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-col gap-20">
+  <main class="flex flex-col gap-6 md:gap-20">
     <Hero />
     <PopularCategories :categories="popularCategories" />
     <DailyBestSells

@@ -7,13 +7,13 @@
         class="md:w-full rounded-xl"
       />
       <div
-        class="absolute inset-0 flex items-center justify-start pl-4 sm:pl-8 lg:pl-16"
+        class="absolute inset-0 top-10 flex items-center justify-start pl-4 sm:pl-8 lg:pl-16"
       >
         <SubscriptionForm :title="FORM_TITLE" :description="FORM_DESCRIPTION" />
       </div>
     </div>
     <div
-      class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1"
+      class="mt-16 md:mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1"
     >
       <InfoCard
         v-for="item in services"

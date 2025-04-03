@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+import { fontFamily } from "tailwindcss/defaultTheme";
+
 export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Poppins", "sans-serif"],
+        sans: ["Poppins", ...fontFamily.sans],
+        quicksand: ["Quicksand", ...fontFamily.sans],
       },
       colors: {
         primary: "#FDBC33",

@@ -1,9 +1,13 @@
 <template>
   <div
-    :class="`flex flex-col text-${textLocation} my-6 gap-8 font-sans text-wrap`"
+    :class="`flex flex-col text-${textLocation} my-6 gap-2 md:gap-4 font-sans text-wrap`"
   >
-    <h4 class="text-accent text-xl">{{ props.description }}</h4>
-    <h1 :class="`${titleSize} font-semibold`">{{ props.title }}</h1>
+    <h4 v-if="props.description" class="text-accent text-base md:text-xl">
+      {{ props.description }}
+    </h4>
+    <h1 :class="`${titleSize} ${titleFont} font-semibold`">
+      {{ props.title }}
+    </h1>
   </div>
 </template>
 
@@ -22,7 +26,12 @@ const props = defineProps({
   titleSize: {
     type: String,
     required: false,
-    default: "text-5xl",
+    default: "text-2xl md:text-4xl",
+  },
+  titleFont: {
+    type: String,
+    required: false,
+    default: "font-poppins",
   },
   textLocation: {
     type: String,
